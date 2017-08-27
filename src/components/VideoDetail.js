@@ -24,6 +24,23 @@ const VideoDetail = ({video}) => {
         <div className="video-container">
           <iframe title="video_yt" src={url} width="700" height="350"/>
         </div>
+        <br/>
+        <div className="box video-meta">
+          <div className="video-title">
+            {video.snippet.title}
+          </div>
+          <div>
+            {/*FIX: Published Date*/}
+            <small>by {video.snippet.channelTitle}, Published on {video.snippet.publishedAt}</small>
+          </div>
+          <article className="media">
+            <div className="media-content">
+              <div className="content">
+                <p>{video.snippet.description}</p>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
   );
