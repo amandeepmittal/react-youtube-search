@@ -27,7 +27,7 @@ class App extends Component {
 				term: term
 			},
 			videos => {
-				this.setState({ videos: videos, selectedVideos: videos[0] }); // through states setting the default video
+				this.setState({ videos: videos, selectedVideo: videos[0] }); // through states setting the default video
 			}
 		);
 	}
@@ -40,7 +40,7 @@ class App extends Component {
 		return (
 			<div className="container">
 				<SearchBar onSearchTermChange={videoSearch} />
-				<VideoDetail/>
+				<VideoDetail video={this.state.selectedVideo}/>
 			</div>
 		);
 	}
