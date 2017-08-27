@@ -1,5 +1,8 @@
 import React from 'react';
+import Timestamp from 'react-timestamp';
+
 import './VideoDetail.css';
+
 const VideoDetail = ({video}) => {
   if(!video) {
     return (
@@ -30,8 +33,7 @@ const VideoDetail = ({video}) => {
             {video.snippet.title}
           </div>
           <div>
-            {/*FIX: Published Date*/}
-            <small>by {video.snippet.channelTitle}, Published on {video.snippet.publishedAt}</small>
+            <small>by {video.snippet.channelTitle}, Published on <Timestamp time={video.snippet.publishedAt} precision={2}/></small>
           </div>
           <article className="media">
             <div className="media-content">
