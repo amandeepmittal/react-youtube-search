@@ -1,8 +1,8 @@
 import React from 'react';
 import './VideoListItem';
 
-const VideoListItem = ({ video, selectedVideo }) => {
-	const imageUrl = video.snippet.thumbnail.default.url;
+const VideoListItem = ({ video, onVideoSelect }) => {
+	const imageUrl = video.snippet.thumbnails.default.url;
 	const title = video.snippet.title;
 
 	return (
@@ -10,13 +10,14 @@ const VideoListItem = ({ video, selectedVideo }) => {
 			<article className="media related-card">
 				<div className="media-left">
 					<figure className="image">
-						<img src={imageUrl} />
+						<img src={imageUrl} alt="" onClick={() => onVideoSelect(video)}/>
 					</figure>
 				</div>
+        &nbsp;
 				<div className="media-content">
 					<div className="content">
 						<p>
-							<span className="video-title">
+							<span onClick={() => onVideoSelect(video)} >
 								{title}
 							</span>
 						</p>

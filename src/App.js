@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import SearchBar from './components/SearchBar';
 import VideoDetail from './components/VideoDetail';
+import VideoList from './components/VideoList';
 import YTSearch from 'youtube-api-search';
 
 const API_KEY = 'AIzaSyANl999ACEi82UvWilvXMclcow8WbikDKY';
@@ -40,7 +41,15 @@ class App extends Component {
 		return (
 			<div className="container">
 				<SearchBar onSearchTermChange={videoSearch} />
-				<VideoDetail video={this.state.selectedVideo}/>
+				<div className="columns">
+					<VideoDetail video={this.state.selectedVideo} />
+					<VideoList
+						videos={this.state.videos}
+						onVideoSelect={selectedVideo => {
+							this.setState({ selectedVideo });
+						}}
+					/>
+				</div>
 			</div>
 		);
 	}
