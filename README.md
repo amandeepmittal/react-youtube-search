@@ -1,5 +1,7 @@
 # YouTube InstaSearch App in React
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/amandeepmittal/react-youtube-search.svg)](https://greenkeeper.io/)
+
 A minimalistic UI for searching YouTube Videos.
 
 ➜ [Demo](https://amandeepmittal.github.io/react-youtube-search/)
