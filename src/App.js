@@ -7,7 +7,7 @@ import VideoList from './components/VideoList';
 import YTSearch from 'youtube-api-search';
 import Footer from './components/Footer';
 
-const API_KEY = 'AIzaSyANl999ACEi82UvWilvXMclcow8WbikDKY';
+const REACT_APP_API_KEY = 'AIzaSyANl999ACEi82UvWilvXMclcow8WbikDKY';
 
 class App extends Component {
 	constructor(props) {
@@ -25,7 +25,7 @@ class App extends Component {
 	videoSearch(term) {
 		YTSearch(
 			{
-				key: API_KEY,
+				key: REACT_APP_API_KEY,
 				term: term
 			},
 			videos => {
