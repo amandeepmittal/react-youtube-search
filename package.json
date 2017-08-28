@@ -1,6 +1,6 @@
 {
 	"name": "react-youtube-search",
-	"version": "0.7.0",
+	"version": "0.7.1",
 	"private": true,
 	"dependencies": {
 		"gh-pages": "1.0.0",
@@ -24,5 +24,10 @@
 		"eslint-plugin-prettier": "2.2.0",
 		"prettier": "1.5.3"
 	},
-	"homepage": "https://amandeepmittal.github.io/react-youtube-search"
+	"homepage": "https://amandeepmittal.github.io/react-youtube-search",
+	"author": "Aman Mittal (http://amandeepmittal.github.io/)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/amandeepmittal/react-youtube-search/issues"
+	}
 }
