@@ -10,14 +10,14 @@ const VideoListItem = ({ video, onVideoSelect }) => {
 			<article className="media related-card">
 				<div className="media-left">
 					<figure className="image">
-						<img src={imageUrl} alt="" onClick={() => onVideoSelect(video)}/>
+						<img src={imageUrl} alt="" onClick={() => onVideoSelect(video)} />
 					</figure>
 				</div>
-        &nbsp;
+				&nbsp;
 				<div className="media-content">
 					<div className="content">
 						<p>
-							<span onClick={() => onVideoSelect(video)} >
+							<span onClick={() => onVideoSelect(video)}>
 								{title}
 							</span>
 						</p>
