@@ -10,7 +10,7 @@ const VideoListItem = ({ video, selectedVideo }) => {
 			<article className="media related-card">
 				<div className="media-left">
 					<figure className="image">
-						<img src={imageUrl} alt="Image" />
+						<img src={imageUrl} />
 					</figure>
 				</div>
 				<div className="media-content">
