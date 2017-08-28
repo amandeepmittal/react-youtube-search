@@ -1,8 +1,9 @@
 {
 	"name": "react-youtube-search",
-	"version": "0.6.3",
+	"version": "0.7.0",
 	"private": true,
 	"dependencies": {
+		"gh-pages": "1.0.0",
 		"lodash.debounce": "4.0.8",
 		"react": "^15.6.1",
 		"react-dom": "^15.6.1",
@@ -11,6 +12,8 @@
 		"youtube-api-search": "0.0.5"
 	},
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test --env=jsdom",
@@ -20,5 +23,6 @@
 		"eslint-config-prettier": "2.3.0",
 		"eslint-plugin-prettier": "2.2.0",
 		"prettier": "1.5.3"
-	}
+	},
+	"homepage": "https://amandeepmittal.github.io/react-youtube-search"
 }
