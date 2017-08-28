@@ -2,10 +2,15 @@
 
 A minimalistic UI for searching YouTube Videos.
 
+➜ [Demo](https://amandeepmittal.github.io/react-youtube-search/)
+
+### Using
 - YouTube API
 - React
 - react-timestamp
 - Bulma CSS
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ### Installation
 - Clone this repository
